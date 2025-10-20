@@ -376,28 +376,7 @@ def print_error():
 
 
 def test():
-    a = Point(0, 0)
-    b = Point(1, 0)
-    c = Point(0, 1)
-    d = Point(0.5, 0.5)
-    e = Point(2,2)
-    f = Point(0,0)
-    g = Point(1,1)
-    h = Point(2,2)
-
-    dt1 = DelaunayTriangulation([a,b,c,d])
-    triangle1=Triangle(a,b,c)
-
-    dt2 = DelaunayTriangulation([a,b,e])
-    triangle2=Triangle(a,b,e)
-
-    dt3 = DelaunayTriangulation([f,g,h])
-    triangle3 = Triangle(f,g,h)
-
-    print(dt1.is_delaunay(triangle1))
-    print(dt2.is_delaunay(triangle2))
-    print(dt3.is_delaunay(triangle3))
-
+    pass
 
 if __name__ == "__main__":
     print("This is the name of the Python script:", sys.argv[0])
