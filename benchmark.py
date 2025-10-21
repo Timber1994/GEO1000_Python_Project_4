@@ -54,7 +54,6 @@ def plot_results():
     for version in results:
         sizes = point_sizes
         avg_times = [sum(results[version][size])/n_runs for size in sizes]
-
         plt.plot(point_sizes, avg_times, label=version, marker='o')
 
     plt.xlabel("Number of Points (n)")
